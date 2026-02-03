@@ -1,0 +1,21 @@
+#!/bin/bash
+# Better-Audio v0.0.0.0.1
+# Mit diesem Skript werden weitere Audiofunktionen freigeschaltet
+# System: Ubbuntu
+# Status: ALPHA!!!
+# Datum: 03.02.2026
+
+# öffne Pulse Audio COnfig Datei
+sudo nano /etc/pulse/default.pa
+
+# Füge ganz unten diesen Befehl ein
+# Dieser Befehl schaltet in der App von Pulse Audio die Funktion
+#  'Echo' frei. Hiermit önnen weitere Hintergrundgeräusche abgestellt
+# werden
+pactl load-module module-echo-cancel
+
+# Automatisches herunterregeln deaktivieren im ChromiumBrowser
+# Öffne diese Seite im Browser
+# chrome://flags
+# und deaktiviere
+# 'Allow WebRTC to adjust the input volume'
