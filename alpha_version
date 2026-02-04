@@ -20,7 +20,7 @@ pactl load-module module-echo-cancel
 # und deaktiviere
 # 'Allow WebRTC to adjust the input volume'
 
-# NoiseTorchinstallieren
+# NoiseTorch installieren
 # NoiseTorch blockiert ALLE Hintergrundgeräusche
 # https://github.com/noisetorch/NoiseTorch/releases
 # NoiseTorch_x64_v0.12.2.tgz herunterladen
