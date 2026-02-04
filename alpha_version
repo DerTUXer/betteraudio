@@ -19,3 +19,11 @@ pactl load-module module-echo-cancel
 # chrome://flags
 # und deaktiviere
 # 'Allow WebRTC to adjust the input volume'
+
+# Noise Touch installieren
+# https://github.com/noisetorch/NoiseTorch/releases
+# NoiseTorch_x64_v0.12.2.tgz herunterladen
+# gtk-update-icon-cache
+# sudo setcap 'CAP_SYS_RESOURCE=+ep' ~/.local/bin/noisetorch
+# Noice-Touch statt Microphone auswählen (OBS, Jitsi...)
+
