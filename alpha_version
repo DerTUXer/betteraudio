@@ -19,6 +19,7 @@ pactl load-module module-echo-cancel
 # chrome://flags
 # und deaktiviere
 # 'Allow WebRTC to adjust the input volume'
+# https://chromewebstore.google.com/detail/disable-automatic-gain-co/dfjdfadcciciboknnahlhgonamhfgmhp
 
 # NoiseTorch installieren
 # Siehe auch https://www.youtube.com/watch?v=DzN9rYNeeIU
