@@ -32,3 +32,15 @@ pactl load-module module-echo-cancel
 
 # Cava Visualisierungen schlagen nicht aus
 systemctl --user restart pipewire pipewire-pulse wireplumber
+
+# Lösungsschritte gegen Tonaussetzer
+# Puffergröße (Quantum) erhöhen:
+pw-metadata -n settings 0 clock.force-quantum 1024.
+~/.config/pipewire/pipewire.conf                        # (Sektion context.properties) dauerhaft hinterlegen.
+# Abtastrate (Sample Rate) angleichen:
+pw-metadata -n settings 0 clock.force-rate 48000.
+# Fehlende Pakete nachinstallieren:
+sudo apt install pipewire-alsa.
+# Energiesparmodus des Audiomoduls deaktivieren:
+# könnte der "Suspend-Modus" der Soundkarte schuld sein
+/usr/share/wireplumber/main.lua.d/                      # Deaktivieren von session.suspend-timeout-seconds anpassen.
