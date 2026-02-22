@@ -31,7 +31,7 @@ pactl load-module module-echo-cancel
 # Noice-Touch statt Microphone auswählen (OBS, Jitsi...)
 
 # Cava Visualisierungen schlagen nicht aus
-systemctl --user restart pipewire pipewire-pulse wireplumber
+systemctl --user restart pipewire pipewire-pulse wireplumber && cava
 
 # Lösungsschritte gegen Tonaussetzer
 # Puffergröße (Quantum) erhöhen:
